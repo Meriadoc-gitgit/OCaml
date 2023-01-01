@@ -69,3 +69,15 @@ let rec decode (l : int list) (t : 'a htree) : 'a list =
   match snd (decode1 l t) with 
   | [] -> fst (decode1 l t) :: []
   | e :: r -> fst (decode1 l t) :: decode (snd (decode1 l t)) t;;
+
+
+
+
+
+let freq_ht (t : 'a htree) : int = 
+  match t with 
+  | Leaf (c,_) -> c 
+  | Branch (x,_,_) -> x;;
+
+let ht_less (t1 : 'a htree) (t2 : 'a htree) : bool = 
+  freq_ht t1 < freq_ht t2;;
