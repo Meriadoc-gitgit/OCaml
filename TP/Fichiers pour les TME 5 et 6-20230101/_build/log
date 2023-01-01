@@ -1,0 +1,144 @@
+# dune build
+# OCAMLPARAM: unset
+# Shared cache: disabled
+# Workspace root: "/Users/vuhoangthuyduong/Documents/GitHub/OCaml/TP/Fichiers
+# pour les TME 5 et 6-20230101"
+# Auto-detected concurrency: 8
+$ /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -config > /var/folders/dk/5xxlbv9n6xngmfm92w8343_40000gp/T/dune_33e81a_output
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; for_host = None
+#  ; fdo_target_exe = None
+#  ; build_dir = "default"
+#  ; toplevel_path =
+#      Some External "/Users/vuhoangthuyduong/.opam/4.14.0/lib/toplevel"
+#  ; ocaml_bin = External "/Users/vuhoangthuyduong/.opam/4.14.0/bin"
+#  ; ocaml = Ok External "/Users/vuhoangthuyduong/.opam/4.14.0/bin/ocaml"
+#  ; ocamlc = External "/Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt"
+#  ; ocamlopt =
+#      Ok External "/Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt"
+#  ; ocamldep =
+#      Ok External "/Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamldep.opt"
+#  ; ocamlmklib =
+#      Ok External "/Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlmklib.opt"
+#  ; env =
+#      map
+#        { "DUNE_OCAML_HARDCODED" : "/Users/vuhoangthuyduong/.opam/4.14.0/lib"
+#        ; "DUNE_OCAML_STDLIB" :
+#            "/Users/vuhoangthuyduong/.opam/4.14.0/lib/ocaml"
+#        ; "DUNE_SOURCEROOT" :
+#            "/Users/vuhoangthuyduong/Documents/GitHub/OCaml/TP/Fichiers pour les TME 5 et 6-20230101"
+#        ; "INSIDE_DUNE" :
+#            "/Users/vuhoangthuyduong/Documents/GitHub/OCaml/TP/Fichiers pour les TME 5 et 6-20230101/_build/default"
+#        ; "OCAMLFIND_IGNORE_DUPS_IN" :
+#            "/Users/vuhoangthuyduong/Documents/GitHub/OCaml/TP/Fichiers pour les TME 5 et 6-20230101/_build/install/default/lib"
+#        ; "OCAMLPATH" :
+#            "/Users/vuhoangthuyduong/Documents/GitHub/OCaml/TP/Fichiers pour les TME 5 et 6-20230101/_build/install/default/lib"
+#        ; "OCAMLTOP_INCLUDE_PATH" :
+#            "/Users/vuhoangthuyduong/Documents/GitHub/OCaml/TP/Fichiers pour les TME 5 et 6-20230101/_build/install/default/lib/toplevel"
+#        ; "OCAML_COLOR" : "always"
+#        ; "OPAMCOLOR" : "always"
+#        }
+#  ; findlib_paths = [ External "/Users/vuhoangthuyduong/.opam/4.14.0/lib" ]
+#  ; arch_sixtyfour = true
+#  ; natdynlink_supported = true
+#  ; supports_shared_libraries = true
+#  ; ocaml_config =
+#      { version = "4.14.0"
+#      ; standard_library_default =
+#          "/Users/vuhoangthuyduong/.opam/4.14.0/lib/ocaml"
+#      ; standard_library = "/Users/vuhoangthuyduong/.opam/4.14.0/lib/ocaml"
+#      ; standard_runtime = "the_standard_runtime_variable_was_deleted"
+#      ; ccomp_type = "cc"
+#      ; c_compiler = "cc"
+#      ; ocamlc_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlc_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; ocamlopt_cflags =
+#          [ "-O2"; "-fno-strict-aliasing"; "-fwrapv"; "-pthread" ]
+#      ; ocamlopt_cppflags = [ "-D_FILE_OFFSET_BITS=64" ]
+#      ; bytecomp_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; bytecomp_c_libraries = [ "-lm"; "-lpthread" ]
+#      ; native_c_compiler =
+#          [ "cc"
+#          ; "-O2"
+#          ; "-fno-strict-aliasing"
+#          ; "-fwrapv"
+#          ; "-pthread"
+#          ; "-D_FILE_OFFSET_BITS=64"
+#          ]
+#      ; native_c_libraries = [ "-lm" ]
+#      ; native_pack_linker = [ "ld"; "-r"; "-o" ]
+#      ; cc_profile = []
+#      ; architecture = "arm64"
+#      ; model = "default"
+#      ; int_size = 63
+#      ; word_size = 64
+#      ; system = "macosx"
+#      ; asm = [ "cc"; "-c"; "-Wno-trigraphs" ]
+#      ; asm_cfi_supported = true
+#      ; with_frame_pointers = false
+#      ; ext_exe = ""
+#      ; ext_obj = ".o"
+#      ; ext_asm = ".s"
+#      ; ext_lib = ".a"
+#      ; ext_dll = ".so"
+#      ; os_type = "Unix"
+#      ; default_executable_name = "a.out"
+#      ; systhread_supported = true
+#      ; host = "aarch64-apple-darwin21.4.0"
+#      ; target = "aarch64-apple-darwin21.4.0"
+#      ; profiling = false
+#      ; flambda = false
+#      ; spacetime = false
+#      ; safe_string = true
+#      ; exec_magic_number = "Caml1999X031"
+#      ; cmi_magic_number = "Caml1999I031"
+#      ; cmo_magic_number = "Caml1999O031"
+#      ; cma_magic_number = "Caml1999A031"
+#      ; cmx_magic_number = "Caml1999Y031"
+#      ; cmxa_magic_number = "Caml1999Z031"
+#      ; ast_impl_magic_number = "Caml1999M031"
+#      ; ast_intf_magic_number = "Caml1999N031"
+#      ; cmxs_magic_number = "Caml1999D031"
+#      ; cmt_magic_number = "Caml1999T031"
+#      ; natdynlink_supported = true
+#      ; supports_shared_libraries = true
+#      ; windows_unicode = false
+#      }
+#  }
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlyacc yaccParser.mly)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamllex -q -o lexer.ml lexer.mll)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamldep.opt -modules -impl syntax.ml) > _build/default/.mylib.objs/syntax.ml.d
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamldep.opt -modules -impl input.ml) > _build/default/.mylib.objs/input.ml.d
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamldep.opt -modules -intf yaccParser.mli) > _build/default/.mylib.objs/yaccParser.mli.d
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamldep.opt -modules -impl lexer.ml) > _build/default/.mylib.objs/lexer.ml.d
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamldep.opt -modules -impl yaccParser.ml) > _build/default/.mylib.objs/yaccParser.ml.d
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamldep.opt -modules -impl printer.ml) > _build/default/.mylib.objs/printer.ml.d
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -bin-annot -I .mylib.objs/byte -no-alias-deps -opaque -o .mylib.objs/byte/syntax.cmo -c -impl syntax.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -bin-annot -I .mylib.objs/byte -no-alias-deps -opaque -o .mylib.objs/byte/yaccParser.cmi -c -intf yaccParser.mli)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -bin-annot -I .mylib.objs/byte -no-alias-deps -opaque -o .mylib.objs/byte/printer.cmo -c -impl printer.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -bin-annot -I .mylib.objs/byte -no-alias-deps -opaque -o .mylib.objs/byte/lexer.cmo -c -impl lexer.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -bin-annot -I .mylib.objs/byte -intf-suffix .ml -no-alias-deps -opaque -o .mylib.objs/byte/yaccParser.cmo -c -impl yaccParser.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -bin-annot -I .mylib.objs/byte -no-alias-deps -opaque -o .mylib.objs/byte/input.cmo -c -impl input.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -a -o mylib.cma .mylib.objs/byte/syntax.cmo .mylib.objs/byte/yaccParser.cmo .mylib.objs/byte/printer.cmo .mylib.objs/byte/lexer.cmo .mylib.objs/byte/input.cmo)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlc.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -bin-annot -I .tme5.eobjs/byte -I .mylib.objs/byte -no-alias-deps -opaque -o .tme5.eobjs/byte/dune__exe__Tme5.cmo -c -impl tme5.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -I .mylib.objs/byte -I .mylib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .mylib.objs/native/syntax.cmx -c -impl syntax.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -I .mylib.objs/byte -I .mylib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .mylib.objs/native/input.cmx -c -impl input.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -I .mylib.objs/byte -I .mylib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .mylib.objs/native/lexer.cmx -c -impl lexer.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -I .mylib.objs/byte -I .mylib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .mylib.objs/native/yaccParser.cmx -c -impl yaccParser.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -I .tme5.eobjs/byte -I .tme5.eobjs/native -I .mylib.objs/byte -I .mylib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .tme5.eobjs/native/dune__exe__Tme5.cmx -c -impl tme5.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -I .mylib.objs/byte -I .mylib.objs/native -intf-suffix .ml -no-alias-deps -opaque -o .mylib.objs/native/printer.cmx -c -impl printer.ml)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -a -o mylib.cmxa .mylib.objs/native/syntax.cmx .mylib.objs/native/yaccParser.cmx .mylib.objs/native/printer.cmx .mylib.objs/native/lexer.cmx .mylib.objs/native/input.cmx)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -shared -linkall -I . -o mylib.cmxs mylib.cmxa)
+$ (cd _build/default && /Users/vuhoangthuyduong/.opam/4.14.0/bin/ocamlopt.opt -w @1..3@5..28@30..39@43@46..47@49..57@61..62-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -27-39-33 -g -o tme5.exe mylib.cmxa .tme5.eobjs/native/dune__exe__Tme5.cmx)

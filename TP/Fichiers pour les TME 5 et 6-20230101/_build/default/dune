@@ -1,0 +1,19 @@
+(executable
+  (name tme5)
+  (libraries mylib)
+  (modules tme5))
+
+(ocamllex lexer)
+
+(ocamlyacc yaccParser)
+
+(library
+  (name mylib)
+  (wrapped false)
+  (modules yaccParser lexer syntax input printer))
+
+;; We decide to ignore the following warnings:
+;; 27: unused variable
+(env
+  (dev
+    (flags (:standard -w -27-39-33))))
