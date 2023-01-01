@@ -98,4 +98,7 @@ let rec min_sauf_min (lt : ('a htree) list) : ('a htree) * (('a htree) list) =
 let ht_branch (t1 : 'a htree) (t2 : 'a htree) : 'a htree = 
   Branch (freq_ht t1 + freq_ht t2, t1, t2);;
 
-  
+let rec leaf_list (f : ('a * int) list) : ('a htree) list = 
+  match f with 
+  | [] -> []
+  | e :: r -> Leaf ((snd e), (fst e)) :: leaf_list r;;
