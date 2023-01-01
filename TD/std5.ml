@@ -81,3 +81,21 @@ let freq_ht (t : 'a htree) : int =
 
 let ht_less (t1 : 'a htree) (t2 : 'a htree) : bool = 
   freq_ht t1 < freq_ht t2;;
+
+let rec min_sauf_min (lt : ('a htree) list) : ('a htree) * (('a htree) list) = 
+  match lt with 
+  | [] -> raise (Invalid_argument "Empty")
+  | e :: r ->     
+    match r with     
+    | [] -> (e,[e])    
+    | x :: y ->       
+      match y with       
+      | [] -> if ht_less x e then (x, [e]) else (e,[e])      
+      | z :: q -> 
+        if ht_less z e && freq_ht z = freq_ht x then (z,e::x::q)
+        else min_sauf_min r;;
+
+let ht_branch (t1 : 'a htree) (t2 : 'a htree) : 'a htree = 
+  Branch (freq_ht t1 + freq_ht t2, t1, t2);;
+
+  
