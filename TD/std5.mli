@@ -8,4 +8,4 @@ val freq_ht : 'a htree -> int
 val ht_less : 'a htree -> 'a htree -> bool
 val min_sauf_min : 'a htree list -> 'a htree * 'a htree list
 val ht_branch : 'a htree -> 'a htree -> 'a htree
-val make_huff : 'a htree list -> 'a htree
+val leaf_list : ('a * int) list -> 'a htree list
