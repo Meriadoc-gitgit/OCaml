@@ -1,0 +1,10 @@
+val double : int -> int
+val somme_2double : int -> int
+val make_even : int -> int
+val sum_impairs : int -> int
+val sum_impairs_inf : int -> int
+val u_n : int -> int
+val sum_un : int -> int
+val nb_un : int -> int
+val nb_bits : int -> int
+val nb_max : int -> int
