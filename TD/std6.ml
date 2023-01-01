@@ -49,3 +49,9 @@ let rec fold_right (f : 'a -> 'b -> 'b) (l : 'a list) (b : 'b) : 'b =
   match rev l with 
   | [] -> b
   | e :: r -> (f e b) + fold_right f (rev r) b;;
+
+
+
+
+(* ARBRE BINAIRE *)
+type 'a btree = Empty | Node of 'a * 'a btree * 'a btree 
