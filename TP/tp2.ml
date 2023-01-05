@@ -96,7 +96,7 @@ let degre (p : int list) : int =
 
 (* Calcule ??? *)
 let rec value_of (x : int) (p : int list) : int = 
-  match List.rev p with 
+  match p with 
   | [] -> 0
   | e :: r -> 
     let rec loop (x : int) (n : int) : int = 
@@ -105,7 +105,7 @@ let rec value_of (x : int) (p : int list) : int =
         let i = n in
         if i > 0 then x * loop x (i - 1)
         else 1 in 
-    e * (loop x (List.length r)) + value_of x (List.rev r);; 
+    e * (loop x (List.length r)) + value_of x r;; 
 
 (* Determine si x est racine du polynome representee par p *)
 let is_root (x : int) (p : int list) : bool = 
