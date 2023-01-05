@@ -38,7 +38,7 @@ let div2 (v1 : value) (v2 : value) : value option =
 type 'a btree = Empty | Node of 'a * 'a btree * 'a btree;;
 
 (* Exemple *)
-let t_ex = Node(5, Node(3, Node(4, Empty, Empty), Node(5, Empty, Empty)), Node(2, Node(3, Empty, Node(7, Empty, Empty)), Empty));
+let t_ex = Node(5, Node(3, Node(4, Empty, Empty), Node(5, Empty, Empty)), Node(2, Node(3, Empty, Node(7, Empty, Empty)), Empty));;
 
 let rec max_length_branch_rec (t : 'a btree) : 'a list = 
   match t with 
