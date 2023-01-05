@@ -40,9 +40,9 @@ let intersection (l1 : 'a list) (l2 : 'a list) : 'a list =
 
 (* Exo 4 - Union *)
 let rec union_rec (l1 : 'a list) (l2 : 'a list) : 'a list = 
-  match l1 with 
+  match List.rev l1 with 
   | [] -> l2 
-  | x :: r -> union_rec r (add_elem x l2);;
+  | x :: r -> union_rec (List.rev r) (x :: l2);;
 
 let union_left (l1 : 'a list) (l2 : 'a list) : 'a list = 
   List.fold_left (fun (a : 'a list) (b : 'a) -> add_elem b a) l1 l2;;
