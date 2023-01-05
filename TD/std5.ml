@@ -45,7 +45,7 @@ let lc_msg = huff_tab t_msg in
 let msg = ['A';'A';'B';'A';'C';'B';'A';'G';'H';'A';'A';'F';'E';'A';'D';'B';'A']
   in code msg lc_msg;;
 
-let rec decode1 (l : int list) (t : 'a htree) : ('a * int list) = 
+let decode1 (l : int list) (t : 'a htree) : ('a * int list) = 
   let rec subset (l1 : int list) (l2 : int list) : bool = 
     match l2 with 
     | [] -> if l1 = [] then true else false 
