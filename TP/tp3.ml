@@ -8,9 +8,7 @@ let rec is_in (e : 'a) (l : 'a list) : bool =
 (* ajouter elem si elem pas dans l *)
 let add_elem (e : 'a) (l : 'a list) : 'a list = 
   if is_in e l then l 
-  else match l with
-  | [] -> [e]
-  | x :: r -> e :: (x :: r);;
+  else e :: l;;
 
 
 (* Exo2 - Sous-ens et egalite d'ensemble *)
