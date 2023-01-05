@@ -62,7 +62,7 @@ let rec make_liste_k (k : int) : int list =
 
 (* Exo 2 - Crible d'Eratosthene *)
 (* Construit la liste des entiers consecutifs de 2 a n *)
-let rec genere_list (n : int) : int list = 
+let genere_list (n : int) : int list = 
   if n < 2 then []
   else range_inter 2 n;;
 
